@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b;
+    color: #e0dee9;
+    text-align: center;
+}
+
+nav {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #007ba7;
+}
+
+#content {
+    padding: 40px 0;
+}
+
+.section {
+    display: none;
+    padding: 40px 20px;
+}
+
+.section.active {
+    display: block;
+}
+
+footer {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.team-members {
+    display: flex; /* Define um container flexível */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-around; /* Distribui espaço entre os itens */
+    margin-top: 20px; /* Adiciona espaço acima do grupo de membros */
+}
+
+.member {
+    text-align: center; /* Centraliza o texto abaixo das imagens */
+    margin: 10px; /* Adiciona espaço ao redor de cada membro */
+}
+
+
+
+
+.news-articles {
+    display: grid; /* Utiliza um layout de grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Define colunas responsivas */
+    gap: 20px; /* Espaço entre os artigos */
+    margin-top: 20px; /* Espaço acima da seção */
+}
+
+.news-item {
+    background-color: #000000; /* Fundo claro para os artigos */
+    border: 1px solid #080808; /* Borda leve ao redor dos artigos */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.news-item h3 {
+    color: #3498db; /* Cor do título das notícias */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+.news-item p {
+    color: #f3f3f3; /* Cor do texto */
+}
+
+.news-item blockquote {
+    margin: 10px 0; /* Espaçamento em torno da citação */
+    padding-left: 10px; /* Espaço à esquerda */
+    border-left: 3px solid #3498db; /* Linha à esquerda da citação */
+    color: #ffffff; /* Cor da citação */
+    font-style: italic; /* Estilo itálico */
+}
+
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .member h3 {
+        font-size: 1em;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+}
+
+/* Estilos para a seção Tutoriais e Dicas */
+#tutoriais {
+    background-color: #09287e; /* Fundo suave */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tutoriais h2 {
+    color: #3a3a3a; /* Cor do título */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o título */
+}
+
+#tutoriais p {
+    font-size: 16px;
+    color: #1a1dc9; /* Cor do texto */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* Justifica o texto */
+}
+
+#tutoriais a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #0408e0; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+#tutoriais a:hover {
+    background-color: #3700b3; /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    #tutoriais {
+        padding: 15px; /* Menor padding em telas pequenas */
+    }
+
+    #tutoriais h2 {
+        font-size: 20px; /* Menor tamanho de fonte em telas pequenas */
+    }
+
+    #tutoriais p {
+        font-size: 14px; /* Menor tamanho de fonte em telas pequenas */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos da Seção */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 50px;
+    box-shadow: 0 40px 40px rgba(19, 157, 238, 0.1);
+}
+
+.section h2 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos dos Itens de Carreira */
+.career-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.career-item h3 {
+    color: #4d56df;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.career-item p {
+    color: #5b76f0;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.career-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.career-item ul li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Estilos das Subseções */
+.career-item h4 {
+    font-size: 1.2em;
+    color: #4a90e2;
+    margin-top: 15px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .career-item h3 {
+        font-size: 1.5em;
+    }
+
+    .career-item {
+        padding: 15px;
+    }
+
+    .career-item p, .career-item ul li {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .career-item h3 {
+        font-size: 1.3em;
+    }
+
+    .career-item p, .career-item ul li {
+        font-size: 0.9em;
+    }
+}
+
+
+#tutoriais {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 90px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 20px 10px rgba(85, 138, 236, 0.1);
+    text-align: center;
+}
+
+#tutoriais h2 {
+    color: #fdfdfd;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#tutoriais p {
+    font-size: 16px;
+    color: #fff6f6;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#tutoriais a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #0408e0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#tutoriais a:hover {
+    background-color: #3700b3;
+}
+
+/* Estilos dos Itens de Carreira */
+.career-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.career-item h3 {
+    color: #f30000;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.career-item p {
+    color: #f1f1f1;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.career-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.career-item ul li {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .career-item {
+        padding: 15px;
+    }
+
+    .career-item h3 {
+        font-size: 1.5em;
+    }
+
+    .career-item p, .career-item ul li {
+        font-size: 0.95em;
+    }
+
+    #tutoriais {
+        padding: 15px;
+    }
+
+    #tutoriais h2 {
+        font-size: 20px;
+    }
+
+    #tutoriais p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .career-item h3 {
+        font-size: 1.3em;
+    }
+
+    .career-item p, .career-item ul li {
+        font-size: 0.9em;
+    }
+
+    #tutoriais p {
+        font-size: 12px;
+    }
+}
